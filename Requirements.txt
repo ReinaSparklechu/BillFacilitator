@@ -1,0 +1,32 @@
+/**
+     * admin should be able to
+     * 1. add cust
+     * display all customers
+     * display bill of customers
+     * display all the bills of each customer
+     * configure the rate
+     * generate bill
+     * logout
+     *
+     * customer should be able to
+     * display bill for the specific month
+     * display list of all the bills
+     * logout
+     *
+     * bill based on the formula
+     * <100 0.5 / unit
+     * 100<x<= 200, 0.8/unit
+     * 200> 150/unit
+     *
+     * should use the models
+     * Customer: custID, custName, Address
+     * Bill: billID, CustID, dateOfBill, UnitsConsumed, totalBill
+     * address: buildingName, FlatNo, StreetName,city
+
+     package centric app
+     encapsulation
+     loosely coupled approach
+     lambdas
+     streams
+     user-defined exceptions
+     */
