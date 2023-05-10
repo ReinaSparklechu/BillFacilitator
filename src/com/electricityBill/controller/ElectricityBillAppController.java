@@ -53,6 +53,25 @@ public class ElectricityBillAppController {
         this.billDao = billDao;
     }
 
+    public ElectricityBillAppController() {
+    }
+
+    public CustomerDao getCustomerDao() {
+        return customerDao;
+    }
+
+    public void setCustomerDao(CustomerDao customerDao) {
+        this.customerDao = customerDao;
+    }
+
+    public BillDao getBillDao() {
+        return billDao;
+    }
+
+    public void setBillDao(BillDao billDao) {
+        this.billDao = billDao;
+    }
+
     private void addCustomer(){
         boolean flatNoEntered = false;
         currentView.displayMessage("Adding customer");
@@ -148,7 +167,7 @@ public class ElectricityBillAppController {
             }
             break;
         }
-        BillService.configureRate(rateIndex,decimal);
+        BillService.configureRate(rateIndex-1,decimal);
     }
     private void logout(){
         currentView.displayMessage("Logging out");
